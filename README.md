@@ -8,8 +8,10 @@ Es un minibackend para enterder el funcionamiento de despliegues
 Crear un entorno y activarlo
 ```
 python3 -m venv mi_entorno  
-
-source mi_entorno/bin/.activate 
+```
+Dentro de la carpeta mi_entorno y de bin
+```
+source ./activate 
 ```
 
 instalar los requerimientos 
