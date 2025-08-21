@@ -33,3 +33,12 @@ Por default sale en el puerto 8000 pero si lo tienes ocupa ver en la consola cua
 python manage.py runserver
 
 ```
+
+## Hacer request 
+
+Para que sea mas facil pueden importar el archivo CRUDDjango....... en postman para que les salgan  
+ejemplos de peticiones 
+
+
+
+
