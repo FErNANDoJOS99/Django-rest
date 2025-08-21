@@ -7,8 +7,10 @@ from .views import *
 
 router = DefaultRouter()
 router.register(r"usuarios", UsuarioViewSet)
-router.register(r"listas", ListaViewSet)
-router.register(r"articulos", ArticuloViewSet)
+# Si descomento esto se crean las rutas para obtener todas las listas 
+# y todos los articulos sin importar el usuario
+# router.register(r"listas", ListaViewSet)
+# router.register(r"articulos", ArticuloViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),

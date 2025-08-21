@@ -95,7 +95,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"nombre\": \"Lista de Compras\",\n  \"fechacreacion\": \"2025-08-20\",\n  \"usuario\": \"1\"\n}",
+					"raw": "{\n  \"nombre\": \"Lista de mochilas\",\n  \"fechacreacion\": \"2025-08-20\",\n  \"usuario\": \"2\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -128,7 +128,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"nombre\": \"Leche\",\n  \"contenido\": \"1 litro de leche entera\",\n  \"listas\": [1]   // aquí van los IDs de las listas\n}",
+					"raw": "{\n  \"nombre\": \"manzana\",\n  \"contenido\": \"1 litro de leche entera\",\n  \"listas\": [1,2]   // aquí van los IDs de las listas\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -147,6 +147,58 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"articulos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerListas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/usuarios/2/listas/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"usuarios",
+						"2",
+						"listas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerArticulos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/usuarios/2/articulos/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"usuarios",
+						"2",
 						"articulos",
 						""
 					]
